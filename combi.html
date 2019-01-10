@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Permutation</title>
+    <h1>The permutation calaulator</h1>
+  </head>
+  <body>
+    <a class="Red" href="permu.html">Permutation</a><br />
+    <a class="Yellow" href="produ.html">Production</a><br />
+    <a class="Blue" href="homog.html">Homogeneous</a><br />
+    <hr />
+    <h3>input</h3><br />
+    "The value of n"
+    <input name="N" type="text" id="N" value="4" /><br />
+    "The value of r"
+    <input name="R" type="text" id="R" value="2" /><br />
+    <button id="submit" onclick="cal();">Calculate</button>
+    <hr />
+    <h3>output</h3>
+    <p id="ans"></p>
+    <script type="text/javascript">
+      function cal() {
+        var n = document.getElementById("N").value;
+        var r = document.getElementById('R').value;
+        alert("right now");
+        var i, answer = 1;
+        for (i = 0; i < n; i++) {
+          answer *= r;
+        }
+        for (i = 1; i <= r; i++) {
+          answer /= i;
+        }
+        for (i = 1; i <= (n - r); i++) {
+          answer /= i;
+        }
+        document.getElementById('ans').innerHTML = answer;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+h1, h3, a, p {
+  font-family: 'Inconsolata', monospace;
+}
+.Red {
+  color: red;
+}
+.Yellow {
+  color: yellow;
+}
+.Green {
+  color: green;
+}
+.Blue {
+  color: blue;
+}
+#N {
+  color: magenta;
+}
+#R {
+  color: cyan;
+}
