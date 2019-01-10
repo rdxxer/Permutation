@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>Permutation</title>
-    <h1>The permutation calaulator</h1>
+    <title>Combination</title>
+    <h1>The combination calaulator</h1>
   </head>
   <body>
     <a class="Red" href="permu.html">Permutation</a><br />
@@ -27,8 +27,8 @@
         var r = document.getElementById('R').value;
         alert("right now");
         var i, answer = 1;
-        for (i = 0; i < n; i++) {
-          answer *= r;
+        for (i = 1; i <= n; i++) {
+          answer *= i;
         }
         for (i = 1; i <= r; i++) {
           answer /= i;
